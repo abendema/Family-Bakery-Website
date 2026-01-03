@@ -1,0 +1,275 @@
+/************* Section 1 *************/
+
+.section1 {
+  background-color: white;
+  padding: 40px;
+}
+
+.section1 .img-side {
+  width: 45%;
+  overflow: hidden;
+  float: left;
+}
+
+.img-side img {
+  width: 100%;
+}
+
+.section1 .content-side {
+  width: 45%;
+  float: right;
+}
+
+.content-side ul {
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.content-side ul li {
+  margin-bottom: 10px;
+}
+
+/* design 'ul li i' for both section1 & section 4 */
+.content-side ul li i,
+.contact ul li i{
+  border: 1px solid rgb(156, 129, 79);
+  color: rgb(156, 129, 79);
+  padding: 6px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+/************* Section 2 *************/
+
+.section2 {
+  background-color: #ecebeb;
+  padding: 40px;
+}
+
+.section2 .img-side {
+  width: 45%;
+  overflow: hidden;
+  float: right;
+}
+
+.section2 .img-side img {
+  width: 100%;
+}
+
+.section2 .content-side {
+  width: 45%;
+  float: left;
+}
+
+@media (max-width: 800px) {
+
+  .section1 .img-side,
+  .section1 .content-side,
+  .section2 .img-side,
+  .section2 .content-side {
+    width: 90%;
+    margin: auto;
+    float: none;
+    clear: both;
+  }
+
+  .img-side img {
+    max-width: 500px;
+  }
+}
+
+/************* Section 3 *************/
+.section3-heading {
+  text-align: center;
+  padding: 0 40px;
+}
+
+.section3-heading p {
+  margin: 0;
+}
+
+.section3 {
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.meals {
+  flex: 1;
+  text-align: center;
+  max-width: 400px;
+}
+
+.meals img {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .section3 {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/************* Section 4 *************/
+.section4 {
+  background-color: #ecebeb;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.contact {
+  flex: 1;
+}
+
+.contact .our-details {
+  font-weight: bold;
+}
+
+.map {
+  width: 50%;
+}
+
+.map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.contact ul {
+  padding-left: 10px;
+  list-style: none;
+}
+
+.contact ul li {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .section4 {
+    flex-direction: column;
+  }
+  .contact,
+  .map {
+    width: 100%;
+  }
+}
+
+/************* Section 5 *************/
+.section5{
+  background-color: #3F3D37;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px 40px;
+}
+
+.child{
+  flex: 1; /*Makes all columns equal width automatically*/
+  max-width: 300px;
+}
+
+.section5 h4{
+  color: #f7f1ed;
+}
+
+.section5 p, 
+.section5 li{
+  color: #b0afae;
+  font-size: 14px;
+}
+
+.section5 ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  
+}
+
+.section5 ul li::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgb(122, 122, 122, 0.2);
+  margin-top: 10px;
+}
+
+.section5 ul li i{
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.section5 ul li .fa-chevron-right{
+  font-size: 9px;
+  cursor: auto;
+}
+
+/* On screens ≤ 800px */
+@media (max-width: 800px){
+  .section5{
+    flex-direction: column;
+  }
+  .child{
+    width: 100%;
+  }
+}
+
+/************* Footer *************/
+footer{
+  background-color: #34322E;
+  padding: 40px 0;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-child{
+  flex: 1;
+}
+
+.footer-container h2{ 
+  color: white;
+  display: inline-block;
+  margin: 0;
+}
+
+.footer-container .fa-burger{
+  font-size: 25px;
+  color: white;
+}
+
+.footer-container p{
+  font-size: 13px;
+  color: #b0afae;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container .social-media{
+  color: #34322E;
+  margin: 3px;
+  border-radius: 30px;
+  padding: 6px;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;   /* centers icon inside circle */
+  align-items: center;    /* vertical center */
+  justify-content: center; /* horizontal center */
+  background: #b0afae;
+  cursor: pointer;
+}

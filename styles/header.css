@@ -1,0 +1,85 @@
+/************* Top page *************/
+.home-page {
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.7)),
+    url(../assets/bread.jpg);
+  background-size: cover;
+  position: relative;
+
+  /* so that the center text is centered properly & i didnt use center align items or justify because i dont want header to be affected*/
+  display: flex;
+  flex-direction: column; 
+}
+
+.center-side {
+  width: 51%;
+  margin: auto; /*to center only this child not the header*/
+  text-align: center;
+  color: #f7f1ed;
+}
+
+.center-side button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+  color: #f7f1ed;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center-side .contactBtn {
+  border: 1px solid #f7f1ed;
+  background-color: #564e49;
+  margin-left: 5px;
+}
+
+.center-side .learnBtn {
+  background-color: #564e49;
+  border: 1px solid #f7f1ed;
+}
+
+.center-side button:hover{
+   background-color: #f7f1ed;
+   color: #564e49;
+}
+
+/************* Header *************/
+.header-container {
+  background-color: rgba(33, 31, 28, 0.679);
+  margin: auto;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;  
+}
+
+.left-side {
+  float: left;
+}
+
+.right-side {
+  float: right;
+}
+
+.left-side span,
+.bread-font {
+  font-size: 20px;
+  color: #f7f1ed;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.right-side a {
+  padding: 10px;
+  text-decoration: none;
+  color: #f7f1ed;
+  transition: 0.3s;
+}
+
+.right-side a:hover{
+  color: #8f705c;
+}

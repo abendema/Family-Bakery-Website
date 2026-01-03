@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+p{
+  line-height: 25px;
+}
+
+.clearfix {
+  clear: both;
+}
