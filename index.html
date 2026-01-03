@@ -6,19 +6,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Family Bakery</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon.ico">
   <link rel="stylesheet" href="./styles/general.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/home.css">
+
 </head>
 
 <body>
+
   <!-- top home page header & background img -->
-  <header class="home-page">
+  <header class="home-page" id="home">
     <div class="header-container">
       <!-- logo/brand -->
       <div class="left-side">
         <i class="fa-solid fa-burger bread-font"></i>
-        <span>Bakery</span>
+        <h2>Bakery</h2>
       </div>
       <!-- primary navigation links -->
       <nav class="right-side">
@@ -30,7 +34,6 @@
         <a href="#contact">Contact</a>
       </nav>
     </div>
-    <div class="clearfix"></div>
 
     <div class="center-side">
       <p>Welcome to</p>
@@ -45,7 +48,7 @@
   <!-- section 1 -->
   <section class="section1">
     <div class="img-side">
-      <img src="./assets/bread.png" alt="bread">
+      <img src="assets/bread.png" alt="bread">
     </div>
     <div class="content-side">
       <h2>Who we are?</h2>
@@ -66,7 +69,7 @@
   <!-- section 2 -->
   <section class="section2">
     <div class="img-side">
-      <img src="./assets/breads.jpg" alt="bread">
+      <img src="assets/breads.jpg" alt="bread">
     </div>
     <div class="content-side">
       <h2>Our Location</h2>
@@ -85,21 +88,21 @@
     <p>Learn more about them. We have worked truly hard to make them perfect for every use.</p>
   </section>
 
-  <section class="section3">
+  <section class="section3" id="offer">
     <div class="meals">
-      <img src="./assets/sup-bread.jpg" alt="bread">
+      <img src="assets/sup-bread.jpg" alt="bread">
       <h3>Superior Breads</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat nesciunt laboriosam delectus quos totam nam?
       </p>
     </div>
     <div class="meals">
-      <img src="./assets/bagels.jpg" alt="bagels">
+      <img src="assets/bagels.jpg" alt="bagels">
       <h3>Bagels</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat nesciunt laboriosam delectus quos totam nam?
       </p>
     </div>
     <div class="meals">
-      <img src="./assets/cookies1.jpg" alt="cookies">
+      <img src="assets/cookies1.jpg" alt="cookies">
       <h3>Cookies</h3>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat nesciunt laboriosam delectus quos totam nam?
       </p>
@@ -107,7 +110,7 @@
   </section>
 
   <!-- section 4 -->
-  <section class="section4">
+  <section class="section4" id="contact">
     <div class="contact">
       <h2>Contact Information</h2>
       <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -131,7 +134,7 @@
   </section>
 
   <!-- section 5 -->
-  <section class="section5">
+  <section class="section5" id="about">
     <div class="child">
       <h4>About us</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab esse eaque aliquam accusantium minima facere et
@@ -160,7 +163,7 @@
         <li><i class="fa fa-chevron-right"></i>Sunday 11AM - 9PM</li>
       </ul>
     </div>
-    <div class="child">
+    <div class="child-contact">
       <h4>Contact Details</h4>
       <ul>
         <li><i class="fa fa-map-marker"></i>Manchester St 123-78B, Random 713, UK</li>

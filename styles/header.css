@@ -5,19 +5,31 @@
     linear-gradient(rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.7)),
     url(../assets/bread.jpg);
+  background-position: center;
   background-size: cover;
   position: relative;
 
-  /* so that the center text is centered properly & i didnt use center align items or justify because i dont want header to be affected*/
+  /* so that the center-side is centered properly. I didnt use center align items or justify because i dont want header to be affected*/
   display: flex;
   flex-direction: column; 
 }
 
 .center-side {
-  width: 51%;
+  width: 50%;
   margin: auto; /*to center only this child not the header*/
   text-align: center;
   color: #f7f1ed;
+}
+
+.center-side h1{
+  font-size: 40px;
+  color: tan;
+}
+
+.center-side p{
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
 }
 
 .center-side button {
@@ -48,29 +60,45 @@
 
 /************* Header *************/
 .header-container {
+  height: 40px;
   background-color: rgba(33, 31, 28, 0.679);
-  margin: auto;
-  padding: 20px;
+  padding: 10px 50px;
   position: fixed;
   top: 0;
   right: 0;
   left: 0;  
+  z-index: 100; /* to ensure header stays above page content */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.left-side {
-  float: left;
-}
-
-.right-side {
-  float: right;
-}
-
-.left-side span,
-.bread-font {
-  font-size: 20px;
+.left-side h2{
+  display: inline-block;
+  margin: 0;
   color: #f7f1ed;
-  font-weight: bold;
+  padding-left: 5px;
   cursor: pointer;
+}
+
+.bread-font{
+  font-size: 25px;
+  color: #f7f1ed;
+  cursor: pointer;
+}
+
+.bread-font:hover{
+  animation: jiggle 0.5s ease-in-out;
+}
+
+/* custom animation */
+@keyframes jiggle {
+  0% { transform: rotate(0deg); }   /* start normal */
+  25% { transform: rotate(15deg); } /* tilt clockwise */
+  50% { transform: rotate(-15deg); }/* tilt counter clockwise */
+  75% { transform: rotate(15deg); } /* tilt clockwise again */
+  100% { transform: rotate(0deg); } /* back to normal */
 }
 
 .right-side a {
@@ -83,3 +111,19 @@
 .right-side a:hover{
   color: #8f705c;
 }
+
+@media (max-width: 800px){
+  .header-container{
+    height: auto; /* grow based on content */
+    padding: 10px 0; /* 0 horizontal padding so they can properly ceneter horizontally with align-items*/
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-side{
+    padding-bottom: 15px;
+  }
+  .center-side {
+    width: 90%; /*fit on smaller screens */
+  }
+}
+

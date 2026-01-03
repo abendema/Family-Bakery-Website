@@ -98,26 +98,19 @@
   background-color: white;
   padding: 40px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;  
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .meals {
-  flex: 1;
+  flex: 1 1 300px;
   text-align: center;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .meals img {
   width: 100%;
-}
-
-@media (max-width: 800px) {
-  .section3 {
-    flex-direction: column;
-    gap: 20px;
-  }
 }
 
 /************* Section 4 *************/
@@ -125,6 +118,8 @@
   background-color: #ecebeb;
   padding: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
 }
 
@@ -173,9 +168,30 @@
   padding: 10px 40px;
 }
 
-.child{
+.child,
+.child-contact{
   flex: 1; /*Makes all columns equal width automatically*/
   max-width: 300px;
+}
+
+.child-contact{
+  position: relative;
+  z-index: 0; 
+}
+
+/* create an overlay to be positioned on top of child-contact to place the background img with low opacity*/
+.child-contact::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-image: url(../assets/earth-bg.png);
+  /* background-position: center; */
+  background-size: cover;
+  opacity: 0.1;
+  z-index: -1; /* to be displayed behind content (text)*/
 }
 
 .section5 h4{
