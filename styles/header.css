@@ -60,18 +60,15 @@
 @media (max-width: 800px){
   .header-container{
     height: auto; /* grow based on content */
-    padding: 10px 0; /* 0 horizontal padding so they can properly ceneter horizontally with align-items*/
     flex-direction: column;
     align-items: center;
   }
   .right-side{
+    white-space: nowrap;
     justify-content: center;
   }
   .left-side{
     padding-bottom: 15px;
-  }
-  .center-side {
-    width: 90%; /*fit on smaller screens */
   }
 }
 

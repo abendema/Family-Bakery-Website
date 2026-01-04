@@ -9,14 +9,15 @@
   background-size: cover;
   position: relative;
 
-  /* so that the center-side is centered properly. I didnt use center align items or justify because i dont want header to be affected*/
+  /* so that the center-side is centered properly.*/
   display: flex;
   flex-direction: column; 
+  justify-content: center;
+  align-items: center;
 }
 
 .center-side {
-  width: 50%;
-  margin: auto; /*to center only this child not the header*/
+  padding: 10px;
   text-align: center;
   color: #f7f1ed;
 }
