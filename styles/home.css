@@ -1,5 +1,64 @@
-/************* Section 1 *************/
+/************* Home *************/
+.home-page {
+  height: 100vh;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.7)),
+    url(../assets/bread.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 
+  /* so that the center-side is centered properly. I didnt use center align items or justify because i dont want header to be affected*/
+  display: flex;
+  flex-direction: column; 
+}
+
+.center-side {
+  width: 50%;
+  margin: auto; /*to center only this child not the header*/
+  text-align: center;
+  color: #f7f1ed;
+}
+
+.center-side h1{
+  font-size: 40px;
+  color: tan;
+}
+
+.center-side p{
+  font-size: 25px;
+  font-family: "Dancing Script", cursive;
+  font-weight: bold;
+}
+
+.center-side button {
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 3px;
+  color: #f7f1ed;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.center-side .contactBtn {
+  border: 1px solid #f7f1ed;
+  background-color: #564e49;
+  margin-left: 5px;
+}
+
+.center-side .learnBtn {
+  background-color: #564e49;
+  border: 1px solid #f7f1ed;
+}
+
+.center-side button:hover{
+   background-color: #f7f1ed;
+   color: #564e49;
+}
+
+/************* Section 1 *************/
 .section1 {
   background-color: white;
   padding: 40px;
